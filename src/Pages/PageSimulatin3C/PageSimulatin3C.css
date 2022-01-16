@@ -1,0 +1,17 @@
+.page3C {
+  justify-content: center;
+}
+
+.page3C > h1 {
+  color: #fff;
+}
+
+.DessinerGraphe1 {
+  background-color: #06ad00;
+  color: #fff;
+  width: 290px;
+  height: 50px;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 10px;
+}
