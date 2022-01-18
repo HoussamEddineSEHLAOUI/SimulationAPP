@@ -13,7 +13,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state={
-      page : 1,
+      page : 0,
       IX: 0,
       IY: 0,
       IZ: 0,
@@ -29,6 +29,7 @@ class App extends Component {
   }
 
   goToPage = (index) =>{
+   
     this.setState({page : index})
   }
 
@@ -38,8 +39,8 @@ class App extends Component {
       <div className="App">
         
         <div className='pagination'>
-          {page === 1
-          ?<PageSimulatin2C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb}/>
+          {page == 1
+          ?(<PageSimulatin2C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb}/>)
           :<PageSimulatin3C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb}/>
           }
         </div>
