@@ -16,6 +16,7 @@ class Table extends Component {
   render(){
     const outputs = this.props.outputs ;
     const page = this.props.page ;
+    console.log(outputs)
     return (
       <div className="Table">
             <div class="table-wrapper">
@@ -33,6 +34,7 @@ class Table extends Component {
                               ? <th>TauC3</th>
                               :<></>
                             }
+                            <th>DFS</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,6 +51,7 @@ class Table extends Component {
                               ? <td >{output.tauxC3.toFixed(2)}</td>
                               :<></>
                               }
+                              <th>{output.DFS}</th>
                           </tr>);
                           })}
                     </tbody>

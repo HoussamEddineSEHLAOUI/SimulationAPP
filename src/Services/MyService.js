@@ -266,7 +266,7 @@ class MyService {
             tempCalendar = this.planifierEvenement(J, "FP", H + this.F3(this.findAlea(J,alea_tab).fp), calendar);
 
         }
-        console.log(this.findClient(ref,listClient))
+        //console.log(this.findClient(ref,listClient))
         listClient[this.findClient(ref,listClient)].DSQ = H;
         return ({
             C1: C1,
@@ -306,7 +306,7 @@ class MyService {
                 IY1 = temp99.IY
                 IZ1 = temp99.IZ
             }
-            console.log("Germes: "+IX1+"--"+IY1+"--"+IZ1)
+            //console.log("Germes: "+IX1+"--"+IY1+"--"+IZ1)
             let H = 0;
             let file = [];
             let alea_tab = [];
