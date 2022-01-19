@@ -39,9 +39,9 @@ class App extends Component {
       <div className="App">
         
         <div className='pagination'>
-          {page == 1
-          ?(<PageSimulatin2C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb}/>)
-          :<PageSimulatin3C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb}/>
+          {page === 1
+          ?(<PageSimulatin2C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb} page={this.state.page}/>)
+          :<PageSimulatin3C IX={this.state.IX} IY={this.state.IY} IZ={this.state.IZ} nb={this.state.nb} page={this.state.page}/>
           }
         </div>
         <div className='panelControlSim'> 

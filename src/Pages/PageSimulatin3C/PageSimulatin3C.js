@@ -46,7 +46,7 @@ class PageSimulatin3C extends Component {
     return (
       <div className="page3C">
         <h1>Simulation de trois Caisses</h1>
-        <Table outputs={outputs}/>
+        <Table outputs={outputs} page={this.props.page}/>
         <button 
           onClick={()=>this.showGraphe(!showGraphe)}
           className='DessinerGraphe1'>Dessiner graphe</button>
